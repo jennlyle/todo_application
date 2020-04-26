@@ -1,6 +1,9 @@
 Dynamic Parts List
 
 - The count for the number of active tasks to-do is dynamically generated as the page loads.
+- The list of ‘active’ tasks will be dynamic.
+- The list of ‘completed’ tasks will be dynamic.
+- There may be a “hidden” list of deleted items… deleted items might still remain in the database, but with a ‘delete’ status that otherwise won’t be included in queries to display what the database holds as active or completed tasks.
 
 I wasn’t clear on what was otherwise meant as ‘dynamic parts’.  Below is a listing of the various ‘form’ parts that make up the basic app:
 
@@ -9,3 +12,5 @@ I wasn’t clear on what was otherwise meant as ‘dynamic parts’.  Below is a
 - Delete function: mark a task as deleted.
 
 The only problems I can think of with the dynamic pieces is how limited they are within the scope of this very basic project.  For example, suppose a user accidentality marks a task as completed or deleted without intending to.  Or is there a way to move a task from the ‘completed’ list to the ‘active’ list?  Will the database actually ‘delete’ items or keep items within the database, but not displayed on the website?  Can the user have access to previously deleted tasks?  
+
+Update: while going through and building the HTML for my "boilerplate", I noted that the the HTML for the forms used for each of the ‘active’ tasks would need to be dynamically-- this is assuming that in the database that supports this application, each task is given a unique database id/key and the application updates the database with whatever form action (in this case, “check off” or “delete”) that the user specifies.  So those forms will be generated dynamically as the page loads.
