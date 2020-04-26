@@ -45,3 +45,8 @@ body {
   p {
     font-size: 20px;
   }
+
+ .container.completed {
+    color: gray;
+    text-decoration: line-through;
+  }
