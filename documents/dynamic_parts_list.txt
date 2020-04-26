@@ -1,0 +1,11 @@
+Dynamic Parts List
+
+- The count for the number of active tasks to-do is dynamically generated as the page loads.
+
+I wasn’t clear on what was otherwise meant as ‘dynamic parts’.  Below is a listing of the various ‘form’ parts that make up the basic app:
+
+- Add function: Add the text entered, assign a DBID, assign an ‘active status’ to the task.
+- Complete function: mark a task as completed.
+- Delete function: mark a task as deleted.
+
+The only problems I can think of with the dynamic pieces is how limited they are within the scope of this very basic project.  For example, suppose a user accidentality marks a task as completed or deleted without intending to.  Or is there a way to move a task from the ‘completed’ list to the ‘active’ list?  Will the database actually ‘delete’ items or keep items within the database, but not displayed on the website?  Can the user have access to previously deleted tasks?  
