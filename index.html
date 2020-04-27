@@ -9,65 +9,163 @@
 </head>
 <body>
     <!-- HEADER-->
-    <h1>My To-Do List</h1>
+    <div class="container">
+        <h1>
+            My To-Do List
+        </h1>
+    </div>
+
+    <p clear="all">
 
     <!-- NUMBER OF ACTIVE TASKS-->
-    <h2>You have X tasks to do.</h2>
+    <div class="container">
+        <div class="row">
+            <div class="container-fluid">
+                <h2>
+                    You have X tasks to do.
+                </h2>
+            </div>
+        </div>
+    </div>
+
+
+    <p clear="all">
 
     <!-- ADD TASK COMPONENT-->
-    <form name="addTask" action="">
-        <input type="text" name="newTask">
-        <input type="button" class="btn btn-primary" value="Add New Task">
-    </form>
+    <div class="container">
+        <div class="row">
+            <div class="container-fluid">
+                <form name="addTask" action="">
+                    <input type="text" name="newTask">
+                    <input type="button" class="btn btn-primary" value="Add New Task">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <p clear="all">
 
     <!-- LIST ACTIVE TASKS COMPONENT-->
-    <div class="container">Task 1 Text
-        <form name="task1" action="">
-            <input type="button" class="tn btn-success" value="Completed">
-            <input type="button" class="btn btn-warning" value="Delete">
-        </form>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                Task 1 Text: Task 1 consists of having to do the following things 
+                 in order to fill up some space.
+                <form name="task1" action="">
+                    <input type="button" class="tn btn-success" value="Completed">
+                    <input type="button" class="btn btn-warning" value="Delete">
+                </form>
+            </div>
+
+            <div class="col-sm-3">
+                Task 2 Text: Task 2 doesn't take up as much space.
+                <form name="task2" action="">
+                    <input type="button" class="tn btn-success" value="Completed">
+                    <input type="button" class="btn btn-warning" value="Delete">
+                </form>
+            </div>
+
+            <div class="col-sm-3">
+                Task 3 Text: Task 3 should take up about as much space as Task 1
+                    should take.
+                <form name="task3" action="">
+                    <input type="button" class="tn btn-success" value="Completed">
+                    <input type="button" class="btn btn-warning" value="Delete">
+                </form>
+            </div>
+                
+            <div class="col-sm-3">
+                Task 4 Text is super short.
+                <form name="task4" action="">
+                    <input type="button" class="tn btn-success" value="Completed">
+                    <input type="button" class="btn btn-warning" value="Delete">
+                </form>
+            </div>
+
+            <div class="col-sm-3">
+                Task 5 Text: I'm confused on why the 'completed' button has a shadow.
+                <form name="task5 action="">
+                    <input type="button" class="tn btn-success" value="Completed">
+                    <input type="button" class="btn btn-warning" value="Delete">
+                </form>
+            </div>
+
+            <div class="col-sm-3">
+                Task 6 Text: I also wish I could make the 'completed' and 'delete' 
+                buttons flush with the bottom of each 'card' in wide view.
+                <form name="task6" action="">
+                    <input type="button" class="tn btn-success" value="Completed">
+                    <input type="button" class="btn btn-warning" value="Delete">
+                </form>
+            </div>
+
+            <div class="col-sm-3">
+                Task 7 Text: And I got a lot of criticism for the color scheme I 
+                picked, but I always depended on someone else to get the colors right.
+                <form name="task7" action="">
+                    <input type="button" class="tn btn-success" value="Completed">
+                    <input type="button" class="btn btn-warning" value="Delete">
+                </form>
+            </div>
+        </div>
     </div>
 
-    <div class="container">Task 2 Text
-        <form name="task2" action="">
-            <input type="button" class="tn btn-success" value="Completed">
-            <input type="button" class="btn btn-warning" value="Delete">
-        </form>
-    </div>
-
-    <div class="container">Task 3 Text
-        <form name="task3" action="">
-            <input type="button" class="tn btn-success" value="Completed">
-            <input type="button" class="btn btn-warning" value="Delete">
-        </form>
-    </div>
-
-    <div class="container">Task 4 Text
-        <form name="task4" action="">
-            <input type="button" class="tn btn-success" value="Completed">
-            <input type="button" class="btn btn-warning" value="Delete">
-        </form>
-    </div>
-
+    <p clear="all">
 
     <!-- LIST COMPLETED TASKS COMPONENT-->
-    <h2>Completed Tasks</h2>
-    <div class="container completed">
-        Completed Task 1
+    <div class="container">
+        <div class="row">
+            <div class="container-fluid">
+                <h2>
+                    Completed Tasks
+                </h2>
+            </div>
+        </div>
+
+    <div class="row">
+        <div class="col-sm-3 completed">
+            Completed Task 1: Look at this completed task.  Job 
+            well done!
+        </div>
+
+        <div class="col-sm-3 completed">
+            Completed Task 2: let's have some text and some back 
+            patting to show how cool this app can be.
+        </div>
+
+        <div class="col-sm-3 completed">
+            Completed Task 3: I wonder if these would be time stamped
+            in the database, or if that is excess to requirements.
+        </div>
+
+        <div class="col-sm-3 completed">
+            Completed Task 4: I think I might make the border card 
+            colors a bit closer to the background.
+        </div>
+
+        <div class="col-sm-3 completed">
+            Completed Task 5: fifth task to edge-test the bootstrap css
+        </div>
+    </div>
+    
     </div>
 
-    <div class="container completed">
-        Completed Task 2
-    </div>
+    <p clear="all">
 
     <!-- FOOTER?-->
-    <footer class="blockquote-footer">
-        &copy; 
-            <cite title="Source Title">
-                Jennifer Calland
-            </cite> 
-            2020
-    </footer> 
+    <div class="container">
+        <div class="row">
+            <div class="container-fluid">
+                <footer class="blockquote-footer">
+                    &copy; 
+                        <cite title="Source Title">
+                            Jennifer Calland
+                        </cite> 
+                        2020
+                </footer> 
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>

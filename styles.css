@@ -1,38 +1,32 @@
 body {
-    background-color: lightblue;
+    background-color: #e2e4fe;
   }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (min-width: 576px) {
     body {
-        background-color: red;
+        background-color: #d4d7fe;
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 768px) {
     body {
-        background-color: orange;
+        background-color: #c6cafe;
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 992px) {
     body {
-        background-color: yellow;
+        background-color: #b8bdfe;
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 1200px) {
     body {
-        background-color: green;
+        background-color: #afaffd;
     }
 }
 
-@media only screen and (max-width: 200px) {
-    body {
-        background-color: blue;
-    }
-}
-
-  
+ 
   h1 {
     color: white;
     text-align: center;
@@ -46,7 +40,20 @@ body {
     font-size: 20px;
   }
 
- .container.completed {
+ .col-sm-3.completed {
     color: gray;
     text-decoration: line-through;
   }
+
+  .col-sm-3 {
+    border: solid 1px;
+    border-color: #8d95fd;
+    background-color: #ffffff;
+  }
+
+
+
+.container-fluid{
+    text-align: center;
+}
+
